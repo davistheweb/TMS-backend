@@ -4,8 +4,8 @@ This repository contains the backend for the Task Management System (TMS). It pr
 
 ## Features
 - User authentication and authorization
-- CRUD operations for tasks and projects
-- RESTful API design
+- CRUD operations for tasks.
+- RESTful API design with MVC architecture
 
 ## Requirements
 - PHP >= 7.4
@@ -47,9 +47,20 @@ This project is licensed under the MIT License.
 
 ```bash
 .
+|-- .env
+|-- .env.example
 |-- .gitignore
 |-- Readme.md
+|-- api
+|   |-- Controllers
+|   |-- Model
+|   |   `-- config
+|   |       `-- DBConnection.php
+|   |-- Views
+|   |   `-- sendMail.php
+|   `-- index.php
 |-- composer.json
-`-- composer.lock
+|-- composer.lock
+`-- index.php
 
-1 directory, 4 files
+6 directories, 10 files
